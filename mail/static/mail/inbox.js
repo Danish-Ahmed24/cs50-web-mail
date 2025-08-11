@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	document
 		.querySelector("#archived")
 		.addEventListener("click", () => load_mailbox("archive"));
-	document.querySelector("#compose").addEventListener("click", compose_email);
+	document.querySelector("#compose").addEventListener("click",()=> {compose_email('','','')});
 	document
 		.querySelector("#compose-form")
 		.addEventListener("submit", compose_email_submit);
